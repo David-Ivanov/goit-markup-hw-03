@@ -78,8 +78,7 @@ button {
     padding-top: 24px;
     padding-bottom: 24px;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 15px 0 15px;
 }
 
 /* logo */
@@ -107,6 +106,7 @@ button {
 }
 
 /* navigation */
+
 .header-nav {
     display: flex;
     align-items: center;
