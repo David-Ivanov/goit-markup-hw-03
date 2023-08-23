@@ -74,10 +74,12 @@ button {
     display: flex;
     justify-content: space-between;
 
-    margin-right: var(--container-margin);
-    margin-left: var(--container-margin);
+
     padding-top: 24px;
     padding-bottom: 24px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* logo */
@@ -312,6 +314,8 @@ button {
 
 
 .team-subtitle {
+    margin-bottom: 8px;
+
     text-align: center;
     text-transform: capitalize;
 
