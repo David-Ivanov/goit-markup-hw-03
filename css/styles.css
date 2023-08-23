@@ -3,6 +3,7 @@
     --navy-blue-color: #2E2F42;
     --accent-color: #404bbf;
     --primary-gap: 24px;
+    --container-margin: 141px;
 }
 
 body {
@@ -27,6 +28,8 @@ ul,
 ol {
     list-style-type: none;
     padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 img {
@@ -43,8 +46,23 @@ button {
 
 .container {
     max-width: 1440px;
-    margin-left: 156px;
-    margin-right: 156px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 /* header */
@@ -52,6 +70,11 @@ button {
 .header-container {
     display: flex;
     justify-content: space-between;
+
+    margin-right: var(--container-margin);
+    margin-left: var(--container-margin);
+    padding-top: 24px;
+    padding-bottom: 24px;
 
     border-bottom: 1px solid #E7E9FC
 }
@@ -132,6 +155,8 @@ button {
 }
 
 .hero-container {
+    margin-right: var(--container-margin);
+    margin-left: var(--container-margin);
     padding-top: 188px;
     padding-bottom: 188px;
 }
@@ -175,6 +200,18 @@ button {
 
 /* benefits */
 
+.benefits-container {
+    margin-right: var(--container-margin);
+    margin-left: var(--container-margin);
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.benefits-list {
+    display: flex;
+    column-gap: var(--primary-gap);
+}
+
 .benefits-title {
     text-align: center;
     text-transform: capitalize;
@@ -188,12 +225,14 @@ button {
 }
 
 .benefits-subtitle {
+    margin-bottom: 8px;
+
     font-size: 20px;
     font-weight: 500;
     letter-spacing: 0.4px;
     line-height: 1.2;
 
-    color: #2E2F42;
+    color: var(--navy-blue-color);
 }
 
 .benefits-text {
@@ -209,7 +248,23 @@ button {
     background-color: #F4F4FD;
 }
 
+.team-container {
+    margin-right: var(--container-margin);
+    margin-left: var(--container-margin);
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.team-list {
+    display: flex;
+    column-gap: var(--primary-gap);
+}
+
 .team-item {
+    width: calc((100% - 24px * 3) / 4);
+
+    border-radius: 0px 0px 4px 4px;
+
     background-color: var(--primary-color);
 }
 
@@ -225,6 +280,10 @@ button {
     color: var(--navy-blue-color);
 }
 
+.team-img {
+    margin-bottom: 32px;
+}
+
 .team-subtitle {
     text-align: center;
     text-transform: capitalize;
@@ -238,6 +297,10 @@ button {
 }
 
 .team-text {
+    margin-bottom: 32px;
+
+    text-align: center;
+
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.32px;
@@ -246,7 +309,16 @@ button {
 
 /* portfolio */
 
+.portfolio-container {
+    margin-right: var(--container-margin);
+    margin-left: var(--container-margin);
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 .portfolio-title {
+    margin-bottom: 72px;
+
     text-align: center;
     text-transform: capitalize;
 
@@ -258,7 +330,28 @@ button {
     color: var(--navy-blue-color);
 }
 
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: var(--primary-gap);
+    row-gap: 48px;
+}
+
+.portfolio-item {
+    width: calc((100% - 24px * 2) / 3);
+}
+
+.portfolio-item-container {
+    padding-left: 16px;
+
+    border-right: 1px solid #E7E9FC;
+    border-bottom: 1px solid #E7E9FC;
+    border-left: 1px solid #E7E9FC;
+}
+
 .portfolio-subtitle {
+    padding-top: 32px;
+
     font-size: 20px;
     font-weight: 500;
     letter-spacing: 0.4px;
@@ -268,6 +361,8 @@ button {
 }
 
 .portfolio-text {
+    margin-bottom: 32px;
+
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.32px;
@@ -280,15 +375,28 @@ button {
     background-color: var(--navy-blue-color);
 }
 
+.footer-container {
+    margin-right: var(--container-margin);
+    margin-left: var(--container-margin);
+    padding-top: 101px;
+    padding-bottom: 100px;
+}
+
+.footer-logo {
+    margin-bottom: 17px;
+}
+
+.footer-logo-span {
+    color: #f4f4fd;
+}
+
 .footer-text {
+    width: 264px;
+
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.32px;
     line-height: 1.5;
 
     color: #F4F4FD;
-}
-
-.footer-logo-span {
-    color: #f4f4fd;
 }
