@@ -73,9 +73,8 @@ button {
 .header-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
-    padding-top: 24px;
-    padding-bottom: 24px;
     margin: 0 auto;
     padding: 0 15px 0 15px;
 }
@@ -143,9 +142,7 @@ button {
 
 .header-address-list {
     display: flex;
-    align-items: center;
 
-    height: 100%;
     gap: 40px;
 }
 
